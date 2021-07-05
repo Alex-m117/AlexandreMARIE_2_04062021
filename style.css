@@ -1,6 +1,6 @@
 body
 {
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 }
 body
 {
@@ -20,6 +20,7 @@ a
 	border: 2px solid black;
 	width: 100%;
 	height: 1880px;
+	max-width: 1440px;
 }
 
 .greyiconcolor
@@ -35,7 +36,8 @@ a
 #logo
 {
 	display: flex;
-	margin-top: 50px;
+	padding-top: 50px;
+	align-items: center;
 	width: 100px;
 	height: 50px;
 }
@@ -59,18 +61,15 @@ a
 	display:flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	align-items: center;
+	align-items: baseline;
+	padding-top: 50px;
 	justify-content: space-between;
 	width: 25%;
 }
 
-#hebergement-nav1:hover
-{
-	border-top: 2px solid #0065FC;
-}
-
 nav ul
-{	margin:0;
+{	
+	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -98,7 +97,7 @@ nav ul
 #lien1:hover
 {
 	color: #0065FC;
-	border-top: 2px solid #0065FC;
+	border-top-width: 2px solid #0065FC;
 }
 
 #lien2:hover
@@ -109,6 +108,12 @@ nav ul
 #lien3
 {
 	color: #0065FC;
+	font-weight: 600;
+}
+
+#lien3:hover
+{
+	color: #6495ED;
 	font-weight: 600;
 }
 
@@ -124,22 +129,21 @@ nav ul
 	flex-direction: row;
 }
 
-.titre_principal h1
+#recherche_reservia
 {
-	margin-left: 35px;
-}
-
-.titre_principal p
-{
-	margin-left: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 315px;
+	margin-left: 3%;
 }
 
 .search_bar
 {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	margin: 10px 0px 30px 35px
 }
 
 .localisation
@@ -184,18 +188,17 @@ nav ul
 	font-size: 15px;
 	font-weight: 600;
 	align-items: center;
+	margin-right: 2%;
 }
 
 .filtres
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 	font-size: 15px;
 	align-items: center;
-	width: 65%;
+	width: 100%;
 	height: 50px;
-	margin-left: 35px;
 }
 
 .boutons_filtres
@@ -289,6 +292,7 @@ nav ul
 .romantique
 {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-content: center;
 	justify-content: space-around;
@@ -328,6 +332,7 @@ nav ul
 .animal
 {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-content: center;
 	justify-content: space-around;
@@ -374,9 +379,6 @@ nav ul
  	display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 35px;
-    margin-top: 20px;
-    margin-bottom: 30px;
 }
 
 .info i
@@ -411,7 +413,7 @@ nav ul
 #block_01
 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: flex-start;
@@ -424,33 +426,31 @@ nav ul
 #nav_herbergements
 {
 	display: flex;
-	width: 90%;
 	height: 40px;
 	align-items: flex-end;
 	font-weight: 900;
+	margin-left: 3%;
 }
 
 #liste_mars1
 {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 #liste_mars2
 {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .palette_block1
 {
 	display: flex;
 	flex-direction: column;
-	position: relative;
-	width: 244px;
-	height: 200px;
+	height: auto;
 	background-color: white;
 	padding: 5px;
 	border-radius: 20px;
@@ -465,13 +465,13 @@ nav ul
 }
 
 .img_heber
-{
+{	
 	object-fit: center;
-	background-size: cover;
 	background-position: center;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	width: 242px;
+	max-width: 100%;
 	height: 115px;
 }
 
@@ -511,8 +511,8 @@ nav ul
 	display: flex;
 	width: 90%;
 	height: 40px;
-	align-items: center;
 	font-weight: 900;
+	margin-left: 3%;
 }
 
 #block_02
@@ -539,8 +539,8 @@ nav ul
 
 .palette_block2
 {
-	width: 340px;
-	height: 140px;
+	width: 80%;
+	height: 23%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -562,7 +562,7 @@ nav ul
 	object-fit: cover;
 	background-position: center;
 	width: 125px;
-	height: 140px;
+	height: 99%;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;	
 }
@@ -598,11 +598,14 @@ nav ul
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: space-between;
-	width: 100%;
+	justify-content: space-between;
+	align-content: space-around;
+	width: 94%;
 	height: 445px;
 	margin-bottom: 50px;
+	margin-left: 3%;
+	margin-right: 3%;
+
 }
 
 #block_03 p
@@ -622,7 +625,7 @@ nav ul
 {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
+	width: 20%;
 	height: 445px;
 	border-radius: 25px;
 	background-color: white;
@@ -640,6 +643,7 @@ nav ul
 	object-fit: cover;
 	background-position: center; 
 	width: 300px;
+	max-width: 100%;
 	height: 390px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
@@ -656,7 +660,7 @@ nav ul
 .mars_case11
 {
 	justify-content: center;
-	width: 300px;
+	width: 100%;
 	height: 235px;
 	border-radius: 25px;
 	background-color: white;
@@ -674,6 +678,7 @@ nav ul
 	object-fit: cover;
 	background-position: center;
 	width: 300px;
+	max-width: 100%;
 	height: 185px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
@@ -681,7 +686,7 @@ nav ul
 
 .mars_case12
 {
-	width: 300px;
+	width: 100%;
 	height: 165px;
 	border-radius: 25px;
 	background-color: white;
@@ -699,6 +704,7 @@ nav ul
 	object-fit: cover;
 	background-position: center;
 	width: 300px;
+	max-width: 100%;
 	height: 110px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
@@ -708,7 +714,7 @@ nav ul
 {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
+	width: 20%;
 	height: 445px;
 	border-radius: 25px;
 	background-color: white;
@@ -726,6 +732,7 @@ nav ul
 	object-fit: cover;
 	background-position: center;
 	width: 300px;
+	max-width: 100%;
 	height: 390px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
@@ -742,9 +749,9 @@ nav ul
 .mars_case14
 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
-	width: 300px;
+	width: 100%;
 	height: 195px;
 	border-radius: 25px;
 	background-color: white;
@@ -762,6 +769,7 @@ nav ul
 	object-fit: cover;
 	background-position: center;
 	width: 300px;
+	max-width: 100%;
 	height: 140px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
@@ -770,9 +778,9 @@ nav ul
 .mars_case15
 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
-	width: 300px;
+	width: 100%;
 	height: 210px;
 	border-radius: 25px;
 	background-color: white;
@@ -790,6 +798,7 @@ nav ul
 	object-fit: cover;
 	background-position: center;
 	width: 300px;
+	max-width: 100%;
 	height: 155px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
@@ -804,7 +813,7 @@ nav ul
 	width: 100%;
 	height: 220px;
 	background-color: #F2F2F2;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .titre_puces
@@ -847,7 +856,10 @@ ul
 	height: 100px;
 }
 
-
+.imp_bas
+{
+	padding-bottom: 7px;
+}
 
 
 
