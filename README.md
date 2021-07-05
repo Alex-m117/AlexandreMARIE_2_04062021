@@ -25,3 +25,7 @@ Réalisation du projet par **Alexandre MARIE**
 - Reservia HTML
 - Reservia CSS
 - Images du Projet 2
+
+## Lien du site Reservia
+
+- https://alex-m117.github.io/AlexandreMARIE_2_04062021/
