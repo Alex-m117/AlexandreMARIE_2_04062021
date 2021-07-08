@@ -1459,3 +1459,72 @@ nav ul
 }/*** Fin des règles Média Queries résolutions <530px ***/
 
 
+/*** Règles Média Queries résolutions <420px ***/
+@media screen and (max-width: 420px){
+
+.bloc_page
+{
+	width: 420px;
+	width: 100%;
+	height: 4892px;
+	border: 2px solid orange;
+}
+
+#heber_et_pop
+{
+	height: 2200px;
+}
+
+#recherche_reservia
+{
+	height: 620px;
+}
+
+.filtres
+{
+	height: 300px;
+}
+
+#titre_filtres
+{
+	padding-bottom: 15px;
+}
+
+.info
+{
+	padding-bottom: 0;
+	margin-top: 50px;
+}
+
+#nav_hebergements
+{
+	margin-left: 0;
+
+}
+
+.pied_page
+{
+	height: 470px;
+}
+
+.bas_puces2
+{
+	margin-top:50px;
+}
+
+.bas_puces3
+{
+	margin-top:50px;
+}
+
+}/*** Fin des règles Média Queries résolutions <420px ***/
+
+
+
+
+
+
+
+
+
+
