@@ -1,3 +1,7 @@
+
+/*** CSS Reservia et Media Queries ***/
+
+
 body
 {
 	font-family: "Raleway", sans-serif;
@@ -41,7 +45,6 @@ a
 	margin-left: -5%;
 	width: 100px;
 	height: 50px;
-
 }
 
 .navigation
@@ -526,8 +529,7 @@ nav ul
 	font-size: 12px;
 }
 
-.afficher
-	
+.afficher	
 {
 	display: flex;
 	width: 90%;
@@ -568,7 +570,6 @@ nav ul
 	background-color: white;
 	padding: 5px;
 	border-radius: 15px;
-	margin: 5px 5px, 5px, 5px;
 	box-shadow: 0px 0px 1px 0px grey;
 }
 
@@ -626,7 +627,6 @@ nav ul
 	margin-bottom: 50px;
 	margin-left: 3%;
 	margin-right: 3%;
-
 }
 
 #block_03 p
@@ -883,9 +883,9 @@ ul
 }
 
 
-/****Media Queries***/
+/**** Média Queries ***/
 
-/*** Règle Media Queries pour tablette en respectant au mieux mieux mise en forme de base du site ***/
+/*** Règle Média Queries <1250px ***/
 @media screen and (max-width: 1250px){
 
 .bloc_page
@@ -961,17 +961,17 @@ nav ul
 	width: 90%;
 }
 
-}/*** Fin règle Media Queries résolution -1250px ***/
+}/*** Fin de règles Média Queries résolutions <1250px ***/
 
 
-/*** Règle Media Queries résolution -768px ***/
+/*** Règles Média Queries résolutions <768px ***/
 @media screen and (max-width: 768px){
 
 .bloc_page
 {
 	width: 768px;
 	width: 100%;
-	height: 6000px;
+	height: 5273px;
 	border: 2px solid green;
 }
 
@@ -1056,12 +1056,12 @@ nav ul
 
 #recherche_reservia
 {
-	height: 600px;
+	height: 500px;
 }
 
 #search
 {
-	width: 90%;
+	width: 95%;
 	font-size:16px;
 	font-weight: 600;
 }
@@ -1088,9 +1088,15 @@ nav ul
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
-	height: 250px;
+	height: 190px;
 	justify-content: space-around;
 	align-items: flex-start;
+	margin-top: -30px;
+}
+
+.info
+{
+	padding-top: 5px;
 }
 
 #logement_text
@@ -1150,6 +1156,11 @@ nav ul
 	object-fit: cover;
 }
 
+.afficher
+{
+	margin-left: 11%;
+}
+
 #block_02
 {
 	order:1;
@@ -1162,6 +1173,11 @@ nav ul
     border-radius: 0px;
 }
 
+#nav_activites
+{
+	margin-left: 10%;
+}
+
 #block_03
 { 
 	display: flex;
@@ -1170,6 +1186,12 @@ nav ul
 	height: 2000px;
 	margin: 0;
 	align-content: space-around;
+}
+
+#block_03 p
+{
+	font-size: 16px;
+	font-weight: 700;
 }
 
 .mars_case10
@@ -1280,98 +1302,160 @@ nav ul
 	height: 235px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pied_page
 {
 	display: flex;
 	flex-direction: column;
-	height: 500px;
+	justify-content: space-between;
+	height: 420px;
+	margin-top: 20px;
+	padding-bottom: 20px;
 }
 
+.bas_puces1
+{
+	width: 40%;
+}
+
+.bas_puces2
+{
+	width: 40%;
+}
+
+.bas_puces3
+{
+	width: 40%;
+}
+
+}/*** Fin de règles Média Queries résolutions <768px ***/
 
 
+/*** Règles Média Queries résolutions <530px ***/
+@media screen and (max-width: 530px){
 
+.bloc_page
+{
+	width: 530px;
+	width: 100%;
+	height: 4673px;
+	border: 2px solid blue;
+}
 
+#recherche_reservia
+{
+	height: 550px;
+}
 
+.filtres
+{
+	height: 250px;
+}
 
+.info
+{
+	margin-top: 40px;
+	padding-bottom: 20px;
+}
 
+#logement_text
+{
+	font-size: 18px;
+}
 
+#nav_hebergements
+{
+	margin-left: -25%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#nav_activites
+{
+	margin-left: 10%;
 
 }
 
+.note_block2
+{
+	align-items: flex-start;
+}
 
+#block_03
+{
+	height: 1350px;
+}
 
+#liste_2
+{
+	height: 420px;
+}
 
+#liste_4
+{
+	height: 420px;
+}
 
+.mars_case10
+{
+	height: 195px;
+}
 
+#mars_1
+{
+	height: 135px;
+}
 
+.mars_case11
+{
+	height: 195px;
+
+}
+
+#mars_2
+{
+	height: 135px;
+}
+
+.mars_case12
+{
+	height: 195px;
+
+}
+
+#mars_3
+{
+	height: 135px;
+}
+
+.mars_case13
+{
+	height: 195px;
+
+}
+
+#mars_4
+{
+	height: 135px;
+}
+
+.mars_case14
+{
+	height: 195px;
+}
+
+#mars_5
+{
+	height: 135px;
+}
+
+.mars_case15
+{
+	height: 195px;
+}
+
+#mars_6
+{
+	height: 135px;
+}
+
+}/*** Fin des règles Média Queries résolutions <530px ***/
 
 
