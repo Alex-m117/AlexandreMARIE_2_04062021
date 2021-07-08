@@ -1480,6 +1480,16 @@ nav ul
 	height: 620px;
 }
 
+.info i
+{
+	width: 45px;
+}
+
+#logement_text
+{
+	margin-left: 10px;
+}
+
 .filtres
 {
 	height: 300px;
