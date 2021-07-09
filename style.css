@@ -21,7 +21,6 @@ a
 .bloc_page
 {
 	margin: auto;
-	border: 2px solid black;
 	width: 100%;
 	height: 1880px;
 	max-width: 1440px;
@@ -89,17 +88,14 @@ nav ul
 	align-items: center;
 	width: 50%;
 	height: 117px;
-}
-
-#hebergement_nav1:hover
-{
-	color: #0065FC;
 	border-top: 3px solid #0065FC;
+	font-weight: 600;
+	margin-top: -3px;
 }
 
 #lien1
 {
-	color: black;
+	color: #0065FC;
 }
 
 #lien2
@@ -138,13 +134,13 @@ nav ul
 	justify-content: center;
 	align-items: center;
 	width: 50%;
-	height: 117px;
 }
 
 #activites_nav1:hover
 {
 	color: #0065FC;
 	border-top: 3px solid #0065FC;
+	height: 120px;
 }
 
 #sign_in
@@ -892,7 +888,6 @@ ul
 {
 	width: 1250px;
 	height: 2411px;
-	border: 2px solid red;
 }
 
 nav ul
@@ -904,7 +899,7 @@ nav ul
 {	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin: 0% 5% 0% 5%;
+	align-content: space-around;
 	width: 100%;
 	height: 1200px;
 }
@@ -972,7 +967,6 @@ nav ul
 	width: 768px;
 	width: 100%;
 	height: 5273px;
-	border: 2px solid green;
 }
 
 .header
@@ -1010,7 +1004,7 @@ nav ul
 	flex-direction: row;
  	order: 3;
  	width: 100%;
- 	margin: 0;
+ 	margin: 0 0 5px 0;
  	padding: 0;
  	height: 60px;
 	text-align: center;
@@ -1024,16 +1018,17 @@ nav ul
 	justify-content: center;
 	align-items: center;
 	width: 50%;
-	height: 50px;
+	height: 53px;
 	font-size: 16px;
 	font-weight: 400;
-}
-
-#hebergement_nav1:hover
-{
-	color: #0065FC;
 	border-bottom: 4px solid #0065FC;
 	border-top: none;
+}
+
+#lien1
+{
+	color: #0065FC;
+	font-weight: 600;
 }
 
 #activites_nav1
@@ -1052,6 +1047,7 @@ nav ul
 	color: #0065FC;
 	border-bottom: 4px solid #0065FC;
 	border-top: none;
+	height: 50px;
 }
 
 #recherche_reservia
@@ -1119,10 +1115,14 @@ nav ul
 	order:2;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	width: 100%;
 	height: auto;
 	background-color: #ffff;
+}
+
+#nav_hebergements
+{
+	margin-left: 10%;
 }
 
 #liste_mars1
@@ -1338,7 +1338,6 @@ nav ul
 	width: 530px;
 	width: 100%;
 	height: 4673px;
-	border: 2px solid blue;
 }
 
 #recherche_reservia
@@ -1360,11 +1359,6 @@ nav ul
 #logement_text
 {
 	font-size: 18px;
-}
-
-#nav_hebergements
-{
-	margin-left: -25%;
 }
 
 #nav_activites
@@ -1466,13 +1460,12 @@ nav ul
 {
 	width: 420px;
 	width: 100%;
-	height: 4892px;
-	border: 2px solid orange;
+	height: 4792px;
 }
 
 #heber_et_pop
 {
-	height: 2200px;
+	height: 2100px;
 }
 
 #recherche_reservia
@@ -1508,8 +1501,8 @@ nav ul
 
 #nav_hebergements
 {
-	margin-left: 0;
-
+	justify-content: center;
+	margin: 0;
 }
 
 .pied_page
@@ -1530,7 +1523,53 @@ nav ul
 }/*** Fin des règles Média Queries résolutions <420px ***/
 
 
+/*** Règles Média Queries résolutions <350px ***/
+@media screen and (max-width: 350px){
 
+.bloc_page
+{
+	width: 350px;
+	width: 100%;
+	height: 4982px;
+}
+
+#activites_nav1:hover
+{
+	height: 50px;
+}
+
+#heber_et_pop
+{
+	height: 2250px;
+}
+
+.palette_block2
+{
+	height: 26%;
+}
+
+#nav_hebergements
+{
+	font-size: 18px;
+	justify-content: center;
+}
+
+#block_03 p
+{
+	font-size: 14px;
+}
+
+.pied_page
+{
+	height: 510px;
+}
+
+.bas_puces2
+{
+	margin-top: 70px;
+}
+
+}/*** Fin des règles Média Queries résolutions <350px ***/
 
 
 
