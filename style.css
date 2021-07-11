@@ -36,6 +36,11 @@ a
 	color: #0065FC;
 }
 
+.no_warning
+{
+	display: none;
+}
+
 #logo
 {
 	display: flex;
