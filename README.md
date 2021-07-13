@@ -17,13 +17,13 @@ Réalisation du projet par **Alexandre MARIE**
 
 ## Validation
 
-- https://validator.w3.org
-
+- Validation HTML5: https://validator.w3.org/
+- Validation CSS3: https://validator.w3.org/unicorn/
 ## Composition du dépot
 
 - Readme
-- Reservia HTML
-- Reservia CSS
+- Reservia "index HTML"
+- Reservia "style CSS"
 - Images du Projet 2
 
 ## Lien du site Reservia

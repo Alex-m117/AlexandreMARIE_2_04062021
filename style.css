@@ -186,7 +186,6 @@ nav ul
 	height: 52px;
 	border: 1px solid #F2F2F2;
 	margin: 0;
-	text-align: 18px;
 }
 
 #bouton_search
@@ -491,7 +490,7 @@ nav ul
 
 .img_heber
 {	
-	object-fit: center;
+	object-fit: cover;
 	background-position: center;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -522,7 +521,6 @@ nav ul
 .text_block1
 {
 	display: flex;
-	font size: 12px;
 }
 
 .note_block1
@@ -595,7 +593,6 @@ nav ul
 	margin-left: 10px;
 	align-items: flex-start;
 	justify-content: space-between;
-	font-size: 12px;
 }
 
 .description2 h2
@@ -936,11 +933,6 @@ nav ul
     height: auto;
     justify-content: space-around;
     padding-bottom: 15px;
-}
-
-.description2
-{
-	font size: 16px;
 }
 
 .text_block2
